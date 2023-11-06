@@ -1,8 +1,26 @@
 # alexa-youtube-unofficial
 
+## Idea
+
+Sag "Alexa, öffne bei Youtube Galaxy-Musik" und öffne die Audio des ersten Treffers
+
 "invocationName" ist der Einstiegspunkt für die App. Zum Beispiel "Alexa, starte Youtube"
 
 ## Documentary
+
+## Create app
+create app for the first time (git repo must be public)
+Working:
+1. https://developer.amazon.com/alexa/console/ask/editor
+
+Not working:
+1. ask new --template-url https://github.com/silaswint/alexa-youtube-unofficial.git --template-branch master
+   > modeling stack: Interaction Model
+   > method to host your skill's backend resources: Alexa-hosted skills
+   > Please type in your skill name: youtube-unofficial
+   > folder name for the skill project: youtube-unofficial
+   > (wait)
+   > copy skill id
 
 ### Deployment
 https://developer.amazon.com/de-DE/docs/alexa/smapi/ask-cli-command-reference.html#generate-lwa-tokens
@@ -12,7 +30,7 @@ first time usage:
 2. ask configure --no-browser
 3. Anweisungen folgen, bei "Do you want to link your AWS account in order to host your Alexa skills?" dann "No" auswählen
 
-create app for first time
+use app for the first time
 1. "ask configure --no-browser" nochmals ausführen
    > create new profile
    > profile name: "silas"
@@ -26,7 +44,6 @@ create app for first time
    > Lambda runtime: nodejs16.x
    > Lambda handler: index.handler
 
-
 deploy for AWS:
 1. ask deploy
 
@@ -35,6 +52,10 @@ deploy for amazon self-hosted git:
 2. git config credential.helper '!aws codecommit credential-helper $@'
    git config credential.UseHttpPath true
 3. git push origin master
+
+## debug
+1. ask run
+2. in second terminal: ask dialog --replay dialog.json
 
 # Limitations for this repository
 
