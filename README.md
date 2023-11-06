@@ -6,6 +6,10 @@ Sag "Alexa, öffne bei Youtube Galaxy-Musik" und öffne die Audio des ersten Tre
 
 "invocationName" ist der Einstiegspunkt für die App. Zum Beispiel "Alexa, starte Youtube"
 
+## Requirements
+npm i --global ngrok
+npm install -g ask-cli
+
 ## Documentary
 
 ## Create app
@@ -54,8 +58,14 @@ deploy for amazon self-hosted git:
 3. git push origin master
 
 ## debug
-1. ask run
+1. (is possibly not working*) ask run --region EU
 2. in second terminal: ask dialog --replay dialog.json
+
+## Workaround-debug
+1. npm start
+2. ask run --debug-port 5000 --region EU
+3. ask dialog --replay dialog.json
+
 
 # Limitations for this repository
 

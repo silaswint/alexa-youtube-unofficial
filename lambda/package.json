@@ -9,9 +9,12 @@
   "author": "Amazon Alexa",
   "license": "Apache License",
   "dependencies": {
+    "alexa-app": "^4.2.3",
     "ask-sdk-core": "^2.7.0",
     "ask-sdk-model": "^1.19.0",
-    "aws-sdk": "^2.326.0"
+    "aws-sdk": "^2.326.0",
+    "request": "^2.88.2",
+    "ssml-builder": "^0.4.3"
   },
   "devDependencies": {
     "ask-sdk-local-debug": "^1.1.0"
