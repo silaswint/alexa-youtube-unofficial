@@ -11,6 +11,11 @@
           "summary": "Video Skill demo using SDK V2",
           "description": "Video App Player Skill demo",
           "name": "video app"
+        },
+        "de-DE": {
+          "summary": "Video Skill demo using SDK V2",
+          "description": "Video App Player Skill demo",
+          "name": "video app"
         }
       },
       "isAvailableWorldwide": true,
