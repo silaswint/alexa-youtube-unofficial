@@ -1,6 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
+      "invocationName": "video app",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
@@ -15,26 +16,30 @@
           "samples": []
         },
         {
-          "slots": [],
-          "name": "HelloWorldIntent",
-          "samples": [
-            "hallo",
-            "wie geht\u0027s dir",
-            "sag hallo welt",
-            "sag hallo"
-          ]
-        },
-        {
           "name": "AMAZON.NavigateHomeIntent",
           "samples": []
         },
         {
-          "name": "AMAZON.FallbackIntent",
-          "samples": []
+          "name": "PlayVideoIntent",
+          "slots": [],
+          "samples": [
+            "spiele video",
+            "schaue video",
+            "starte video"
+          ]
+        },
+        {
+          "name": "AboutIntent",
+          "slots": [],
+          "samples": [
+            "über",
+            "credits",
+            "info"
+          ]
         }
       ],
-      "types": [],
-      "invocationName": "youtube"
+      "types": []
     }
-  }
+  },
+  "version": "1"
 }

@@ -59,12 +59,12 @@ deploy for amazon self-hosted git:
 
 ## debug
 1. (is possibly not working*) ask run --region EU
-2. in second terminal: ask dialog --replay dialog.json
+2. in second terminal: ask dialog --replay dialog-en-US.json
 
 ## Workaround-debug
 1. npm start
 2. ask run --debug-port 5000 --region EU
-3. ask dialog --replay dialog.json
+3. ask dialog --replay dialog-en-US.json
 
 
 # Limitations for this repository
